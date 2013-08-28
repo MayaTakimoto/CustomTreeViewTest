@@ -37,7 +37,7 @@ namespace CustomTreeViewTest
 
                 cHome.Name = "home" + (cnt + 1);
                 cHome.Tag = "おや" + (cnt + 1);
-
+                
                 for (int i = 0; i < 60; i++)
                 {
                     CustomTreeNode ct = new CustomTreeNode();
@@ -50,7 +50,7 @@ namespace CustomTreeViewTest
                         CustomTreeNode cct = new CustomTreeNode();
 
                         cct.Name = "child" + (j + 1);
-                        cct.Tag = "まご" + (j + 1);
+                        cct.Tag = "まごおおおおおおおおおおおおおおおおおおおおおおおおおおおん" + (j + 1);
 
                         ct.ListTreeNodes.Add(cct);
                     }
