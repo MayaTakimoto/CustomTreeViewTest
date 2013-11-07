@@ -1,39 +1,125 @@
-﻿using ProtoBuf;
+﻿using Livet;
+using ProtoBuf;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
+using System.ComponentModel;
 
 namespace CustomTreeViewTest
 {
     [ProtoContract]
-    public class CustomTreeNode
+    public class CustomTreeNode : ViewModel
     {
+        private bool isSelected;
+        private bool isExpanded;
+        private bool isFocusable;
+
         [ProtoMember(1)]
-        public string Name { get; set; }
+        private string name;
 
         [ProtoMember(2)]
-        public string Tag { get; set; }
+        private string tag;
 
-
-        /// <summary>
-        /// 子ノードのリストのプロパティ
-        /// </summary>
         [ProtoMember(3)]
-        public ObservableCollection<CustomTreeNode> ListTreeNodes
+        public ObservableCollection<CustomTreeNode> Nodes { get; set; }
+
+        [ProtoMember(4)]
+        private int maxNodesCnt;
+
+        public bool IsSelected
         {
-            get;
-            set;
+            get
+            {
+                return this.isSelected;
+            }
+            set
+            {
+                if (this.isSelected != value)
+                {
+                    this.isSelected = value;
+                    RaisePropertyChanged("IsSelected");
+                }
+            }
         }
+
+        public bool IsExpanded
+        {
+            get
+            {
+                return this.isExpanded;
+            }
+            set
+            {
+                if (this.isExpanded != value)
+                {
+                    this.isExpanded = value;
+                    RaisePropertyChanged("IsExpanded");
+                }
+            }
+        }
+
+        public bool IsFocusable
+        {
+            get
+            {
+                return this.isFocusable;
+            }
+            set
+            {
+                if (this.isFocusable != value)
+                {
+                    this.isFocusable = value;
+                    RaisePropertyChanged("IsFocusable");
+                }
+            }
+        }
+
+        public int MaxNodesCount
+        {
+            get 
+            { 
+                return this.maxNodesCnt;
+            }
+            set
+            {
+                this.maxNodesCnt = value;
+                RaisePropertyChanged("MaxNodesCount");
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return this.name;
+            }
+            set
+            {
+                this.name = value;
+                RaisePropertyChanged("Name");
+            }
+        }
+
+        public string Tag
+        {
+            get
+            {
+                return this.tag;
+            }
+            set
+            {
+                this.tag = value;
+                RaisePropertyChanged("Tag");
+            }
+        }
+
 
         public CustomTreeNode()
         {
-            ListTreeNodes = new ObservableCollection<CustomTreeNode>();
+            Nodes = new ObservableCollection<CustomTreeNode>();
             Name = string.Empty;
             Tag = null;
+            IsSelected = false;
+            MaxNodesCount = 100;
         }
     }
 }

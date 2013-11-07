@@ -16,3 +16,15 @@ D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\obj\Debug\Custom
 D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\obj\Debug\CustomTreeViewTest.csproj.GenerateResource.Cache
 D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\obj\Debug\CustomTreeViewTest.exe
 D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\obj\Debug\CustomTreeViewTest.pdb
+D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\bin\Debug\Livet.dll
+D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\bin\Debug\System.Windows.Interactivity.dll
+D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\bin\Debug\Livet.xml
+D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\bin\Debug\System.Reactive.Core.dll
+D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\bin\Debug\System.Reactive.Interfaces.dll
+D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\bin\Debug\System.Reactive.Linq.dll
+D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\bin\Debug\System.Reactive.PlatformServices.dll
+D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\bin\Debug\System.Reactive.Core.xml
+D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\bin\Debug\System.Reactive.Interfaces.xml
+D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\bin\Debug\System.Reactive.Linq.xml
+D:\Git\CustomTreeViewTest\CustomTreeViewTest\CustomTreeViewTest\bin\Debug\System.Reactive.PlatformServices.xml
